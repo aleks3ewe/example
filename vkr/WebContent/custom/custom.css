@@ -1,0 +1,164 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.headfoot_up {
+	z-index: 5;
+}
+
+.up_content {
+	z-index: 5;
+}
+
+.body_color {
+	background-image: url("/vkr/img/backcover.jpg");
+}
+
+.body_color:after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .9);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.body_color_main {
+	background-image: url("/vkr/img/backcover_endless.jpg");
+}
+
+.body_color_darkness {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .5);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+
+.flex {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
+.flex_main {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.main {
+	flex-grow: 3;
+}
+
+.intro {
+	max-height: 100vh;
+	overflow: hidden;
+	position: relative;
+	background: url("/vkr/img/cover.jpg") center no-repeat;
+	background-size: cover;
+}
+
+.intro:after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .7);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+
+.intro_content {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 3;
+}
+
+.video {
+	position: relative;
+	z-index: 1;
+	padding-bottom: 56.25%;
+}
+
+.video_media {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.center-img {
+	z-index: 4;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.inline_form {
+	display: inline-block;
+	border-radius: 10px;
+}
+
+.shadow:hover {
+	box-shadow: 0 0 25px rgba(248, 249, 250, .1);
+}
+
+.shadow {
+	box-shadow: 0 0 50px rgba(0, 0, 0, 0.7);
+}
+
+.shadow_min:hover {
+	box-shadow: 0 0 15px rgba(248, 249, 250, 0.4);
+}
+
+.shadow_min {
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.text_shadow_min {
+	text-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.png_shadow:hover {
+	-webkit-filter: drop-shadow(0px 0px 25px rgba(248, 249, 250, .1));
+	filter: drop-shadow(0px 0px 25px rgba(248, 249, 250, .1));
+}
+
+.png_shadow {
+	-webkit-filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, .7));
+	filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, .7));
+}
+
+.footer_background {
+	background: #000000;
+}
+
+@media ( max-width : 991px) {
+	.remove {
+		display: none;
+	}
+	.login_center {
+		z-index: 4;
+		margin: auto;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+	}
+}
